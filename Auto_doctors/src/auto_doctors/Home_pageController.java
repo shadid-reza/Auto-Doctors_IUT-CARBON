@@ -47,6 +47,12 @@ public class Home_pageController implements Initializable {
         stage.show();
     }
     public void signUpBtnHandler (ActionEvent event) throws IOException {
-        
+        root = FXMLLoader.load(getClass().getResource("/auto_doctors/signup_page.fxml"));
+
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+
+        stage.setScene(scene);
+        stage.show();
     }
 }

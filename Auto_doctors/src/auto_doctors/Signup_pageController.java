@@ -20,7 +20,7 @@ import javafx.stage.Stage;
  *
  * @author hmsha
  */
-public class Login_pageController implements Initializable {
+public class Signup_pageController implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -30,12 +30,13 @@ public class Login_pageController implements Initializable {
         // TODO
     }    
     
+    
     private Stage stage;
     private Scene scene;
     private Parent root;
     
     
-     public void HandleBackBtnLogin1 (ActionEvent event) throws IOException {
+     public void HandleBackBtnSignUp1 (ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("/auto_doctors/Home_page.fxml"));
 
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
