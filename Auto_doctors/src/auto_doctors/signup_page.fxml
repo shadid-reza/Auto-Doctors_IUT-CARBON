@@ -17,7 +17,7 @@
    <children>
       <ImageView fitHeight="427.0" fitWidth="635.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@back.png" />
+            <Image url="@../images_folder/back.png" />
          </image>
       </ImageView>
       <Pane layoutX="187.0" layoutY="6.0" prefHeight="90.0" prefWidth="225.0">
@@ -73,7 +73,7 @@
                <graphic>
                   <ImageView fitHeight="38.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@back_button.png" />
+                        <Image url="@../images_folder/back_button.png" />
                      </image>
                   </ImageView>
                </graphic></Button>
