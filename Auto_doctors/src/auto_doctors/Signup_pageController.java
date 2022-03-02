@@ -37,7 +37,7 @@ public class Signup_pageController implements Initializable {
     
     
      public void HandleBackBtnSignUp1 (ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("/auto_doctors/Home_page.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/fxml_files/home_page.fxml"));
 
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
