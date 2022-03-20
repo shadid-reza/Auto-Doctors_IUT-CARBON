@@ -14,23 +14,23 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
  *
  * @author hmsha
  */
-public class Signup_pageController implements Initializable {
+public class Signup_pageController {
 
-    /**
-     * Initializes the controller class.
-     */
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
-    
-    
+    @FXML
+    private Button btn_signUp;
+    @FXML
+    private TextField tf_username,tf_password,tf_contact,tf_cpassword;
+
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -45,4 +45,19 @@ public class Signup_pageController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
+      public void handleSignUp (ActionEvent event) throws IOException {
+      
+          if(!tf_username.getText().trim().isEmpty() && !tf_password.getText().trim().isEmpty()
+                  && !tf_cpassword.getText().trim().isEmpty() && !tf_contact.getText().trim().isEmpty())
+          {
+              
+          }
+          else{
+              System.out.println("Please Fill In All the Infornmation");
+              Alert alert = new Alert(Alert.AlertType.ERROR);
+              alert.setContentText("Please Fill In All the Infornmation");
+              alert.show();
+          }
+    }
+     
 }
