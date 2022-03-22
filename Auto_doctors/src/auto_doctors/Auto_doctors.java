@@ -20,7 +20,7 @@ public class Auto_doctors extends Application {
     
     public void start(Stage stage) throws Exception
     {   
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml_files/home_page.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/auto_doctors/home_page.fxml"));
         
         Scene scene = new Scene(root);
         

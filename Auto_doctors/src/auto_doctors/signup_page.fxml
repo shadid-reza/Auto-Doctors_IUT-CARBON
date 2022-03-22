@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="auto_doctors.Signup_pageController">
+    <stylesheets>
+        <URL value="@login_page.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="427.0" fitWidth="635.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images_folder/back.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="187.0" layoutY="6.0" prefHeight="90.0" prefWidth="225.0">
+         <children>
+            <Label layoutX="58.0" layoutY="14.0" text="Sign Up ">
+               <font>
+                  <Font name="Bodoni MT" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="59.0" layoutY="64.0" prefHeight="25.0" prefWidth="126.0" text="Register as user">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="35.0" layoutY="96.0" prefHeight="299.0" prefWidth="529.0">
+         <children>
+            <Label layoutX="16.0" layoutY="25.0" text="Name">
+               <font>
+                  <Font name="Bodoni MT" size="22.0" />
+               </font>
+            </Label>
+            <TextField layoutX="155.0" layoutY="19.0" prefHeight="38.0" prefWidth="249.0" promptText="Username" />
+            <TextField layoutX="155.0" layoutY="77.0" prefHeight="38.0" prefWidth="249.0" promptText="Password" />
+            <Label layoutX="16.0" layoutY="83.0" text="Password">
+               <font>
+                  <Font name="Bodoni MT" size="22.0" />
+               </font>
+            </Label>
+            <TextField layoutX="155.0" layoutY="185.0" prefHeight="38.0" prefWidth="249.0" promptText="Phone" />
+            <Button alignment="CENTER" layoutX="155.0" layoutY="238.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="249.0" style="-fx-background-color: #20DF7F;" text="Sign Up" textFill="#fffdfd">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Label layoutX="14.0" layoutY="191.0" text="Contact No.">
+               <font>
+                  <Font name="Bodoni MT" size="22.0" />
+               </font>
+            </Label>
+            <TextField layoutX="155.0" layoutY="131.0" prefHeight="38.0" prefWidth="249.0" promptText="Confirm Password" />
+            <Label layoutX="16.0" layoutY="137.0" prefHeight="27.0" prefWidth="126.0" text="Confirm Pass">
+               <font>
+                  <Font name="Bodoni MT" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="532.0" layoutY="10.0" prefHeight="38.0" prefWidth="41.0">
+         <children>
+            <Button fx:id="back_button_signup1" layoutY="5.0" mnemonicParsing="false" onAction="#HandleBackBtnSignUp1" prefHeight="30.0" prefWidth="43.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="38.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images_folder/back_button.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
