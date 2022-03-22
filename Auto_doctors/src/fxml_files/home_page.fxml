@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="600.0" snapToPixel="false" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="auto_doctors.Home_pageController">
+    <stylesheets>
+        <URL value="@home_page.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="405.0" prefWidth="673.0">
+         <children>
+            <ImageView fitHeight="417.0" fitWidth="674.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images_folder/background_1600-960.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="signupBtn" layoutX="573.0" layoutY="14.0" mnemonicParsing="false" onAction="#signUpBtnHandler" prefHeight="34.0" prefWidth="69.0" text="Sign Up" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Label layoutX="196.0" layoutY="14.0" prefHeight="34.0" prefWidth="151.0" text="Auto Doctor" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Book Antiqua" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginBtn" layoutX="468.0" layoutY="14.0" mnemonicParsing="false" onAction="#loginBtnHandler" prefHeight="34.0" prefWidth="69.0" text="Login">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
