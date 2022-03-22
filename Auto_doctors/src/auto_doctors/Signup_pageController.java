@@ -6,6 +6,7 @@ package auto_doctors;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -29,7 +30,7 @@ public class Signup_pageController {
     @FXML
     private Button btn_signUp;
     @FXML
-    private TextField tf_username,tf_password,tf_contact,tf_cpassword;
+    private TextField tf_name,tf_password,tf_contact,tf_cpassword;
 
     private Stage stage;
     private Scene scene;
@@ -45,12 +46,23 @@ public class Signup_pageController {
         stage.setScene(scene);
         stage.show();
     }
-      public void handleSignUp (ActionEvent event) throws IOException {
+      public void handleSignUp (ActionEvent event) throws IOException, ClassNotFoundException, SQLException {
       
-          if(!tf_username.getText().trim().isEmpty() && !tf_password.getText().trim().isEmpty()
+          System.out.println("Hello World");
+          if(!tf_name.getText().trim().isEmpty() && !tf_password.getText().trim().isEmpty()
                   && !tf_cpassword.getText().trim().isEmpty() && !tf_contact.getText().trim().isEmpty())
           {
-              
+              if(tf_password.getText().equals(tf_cpassword.getText())){
+                   DBUtils.signUpUser(event, tf_name.getText(), tf_password.getText(), tf_contact.getText());
+                   String s="Sign up Done!";
+                   DBUtils.tempChange(s);
+              }
+              else{
+                   Alert alert = new Alert(Alert.AlertType.ERROR);
+                   alert.setContentText("Passwords Dont Match");
+                   alert.show();
+                   System.out.println("Passwords Dont Match");
+              }
           }
           else{
               System.out.println("Please Fill In All the Infornmation");

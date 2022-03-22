@@ -6,7 +6,7 @@ package auto_doctors;
 
 import javafx.event.ActionEvent;
 import java.sql.*;
-import auto_doctors.JDBC;
+import auto_doctors.jdbc;
 import java.io.IOException;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -31,15 +31,20 @@ public class DBUtils {
         stage.setScene(new Scene(root, 600,400));
         stage.show();
     }
+    public static void tempChange(String s){
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setContentText(s);
+        alert.show();
+    }
     
     public static void signUpUser(ActionEvent event, String username, String password, String contact) throws ClassNotFoundException, SQLException{
         Connection conn = null;
         PreparedStatement psInsert = null;
         PreparedStatement psCheck = null;
         ResultSet resultSet = null;
-        JDBC connection = new JDBC();
+        jdbc connection = new jdbc();
         conn = connection.getConnection();
-        psCheck=conn.prepareStatement("SELECT * FROM users WHERE username= ?");
+        psCheck=conn.prepareStatement("SELECT * FROM users WHERE NID= ?");
         psCheck.setString(1,username);
         resultSet = psCheck.executeQuery();
         if(resultSet.isBeforeFirst()){
@@ -91,7 +96,7 @@ public class DBUtils {
         Connection conn = null;
         PreparedStatement ps = null;
         ResultSet rs = null;
-        JDBC connection = new JDBC();
+        jdbc connection = new jdbc();
         conn = connection.getConnection();
         ps=conn.prepareStatement("SELECT password FROM users WHERE username = ?");
         ps.setString(1,username);
