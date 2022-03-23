@@ -7,10 +7,12 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="auto_doctors.Login_pageController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="auto_doctors.Appoinment_pageController">
     <stylesheets>
         <URL value="@login_page.css" />
     </stylesheets>
@@ -66,5 +68,20 @@
             </ImageView>
          </children>
       </Pane>
+      <Label fx:id="Menu" layoutX="54.0" layoutY="25.0" text="MENU" />
+      <Label fx:id="MenuBack" layoutX="54.0" layoutY="25.0" text="MENU" />
+      <BorderPane layoutY="78.0" prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <AnchorPane fx:id="slider" prefHeight="350.0" prefWidth="200.0" style="-fx-background-color: blue;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutY="67.0" prefHeight="259.0" prefWidth="189.0">
+                     <children>
+                        <Label prefHeight="58.0" prefWidth="189.0" text="Just" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
    </children>
 </AnchorPane>
