@@ -8,10 +8,9 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="auto_doctors.Appointment_pageController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="auto_doctors.Login_pageController">
     <stylesheets>
         <URL value="@login_page.css" />
     </stylesheets>
@@ -21,16 +20,7 @@
             <Image url="@../images_folder/back.png" />
          </image>
       </ImageView>
-      <AnchorPane fx:id="slider" prefHeight="370.0" prefWidth="200.0">
-         <children>
-            <VBox layoutY="104.0" prefHeight="260.0" prefWidth="200.0">
-               <children>
-                  <Label text="Kosd" />
-               </children>
-            </VBox>
-         </children>
-      </AnchorPane>
-      <Pane layoutX="152.0" layoutY="18.0" prefHeight="71.0" prefWidth="295.0">
+      <Pane layoutX="153.0" layoutY="48.0" prefHeight="71.0" prefWidth="295.0">
          <children>
             <Label layoutX="14.0" layoutY="17.0" text="Make an Appointment ">
                <font>
@@ -39,7 +29,7 @@
             </Label>
          </children>
       </Pane>
-      <Pane layoutX="102.0" layoutY="129.0" prefHeight="283.0" prefWidth="478.0">
+      <Pane layoutX="25.0" layoutY="129.0" prefHeight="283.0" prefWidth="551.0">
          <children>
             <Label layoutX="16.0" layoutY="26.0" prefHeight="27.0" prefWidth="165.0" text="Car Manufacturer">
                <font>
@@ -76,7 +66,5 @@
             </ImageView>
          </children>
       </Pane>
-      <Label fx:id="Menu" layoutX="54.0" layoutY="23.0" prefHeight="21.0" prefWidth="47.0" text="Menu" wrapText="true" />
-      <Label fx:id="MenuBack" layoutX="54.0" layoutY="23.0" prefHeight="21.0" prefWidth="47.0" text="Menu" wrapText="true" />
    </children>
 </AnchorPane>
