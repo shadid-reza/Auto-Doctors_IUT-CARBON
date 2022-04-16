@@ -11,8 +11,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="auto_doctors.SignUp_workshopController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="auto_doctors.SignUp_workshopController">
    <children>
       <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="437.3333333333333" prefWidth="611.3333333333334" styleClass="mainFxmlClass" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <stylesheets>
@@ -51,7 +50,7 @@
                         <Font name="Bodoni MT" size="18.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="155.0" layoutY="151.0" prefHeight="30.0" prefWidth="249.0" promptText="Email" />
+                  <TextField layoutX="155.0" layoutY="151.0" prefHeight="30.0" prefWidth="249.0" promptText="example(abc@gmail.com)" />
                   <Label layoutX="5.0" layoutY="202.0" text="Contact No." wrapText="true">
                      <font>
                         <Font name="Bodoni MT" size="18.0" />
@@ -76,13 +75,18 @@
                      </font>
                   </Label>
                   <TextField layoutX="155.0" layoutY="241.0" prefHeight="30.0" prefWidth="249.0" promptText="Workshop Location" />
+                  <Button alignment="CENTER" layoutX="155.0" layoutY="285.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="249.0" style="-fx-background-color: #20DF7F;" text="Sign Up" textFill="#fffdfd">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Button>
                </children>
             </Pane>
             <Pane layoutX="532.0" layoutY="10.0" prefHeight="38.0" prefWidth="41.0">
                <children>
-                  <Button fx:id="back_button_signup11" layoutY="5.0" mnemonicParsing="false" onAction="#HandleBackBtnSignUp1" prefHeight="30.0" prefWidth="43.0" style="-fx-background-color: transparent;">
+                  <Button fx:id="back_button_signup11" layoutY="5.0" mnemonicParsing="false" onAction="#HandleBackBtnSignUp2" prefHeight="30.0" prefWidth="43.0" style="-fx-background-color: transparent;">
                      <graphic>
-                        <ImageView fitHeight="38.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="38.0" fitWidth="37.0" onDragDetected="#HandleBackBtnSignUp2" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../images_folder/back_button.png" />
                            </image>
@@ -91,11 +95,6 @@
                   </Button>
                </children>
             </Pane>
-            <Button alignment="CENTER" layoutX="175.0" layoutY="366.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="249.0" style="-fx-background-color: #20DF7F;" text="Sign Up" textFill="#fffdfd">
-               <font>
-                  <Font size="22.0" />
-               </font>
-            </Button>
          </children>
       </AnchorPane>
    </children>

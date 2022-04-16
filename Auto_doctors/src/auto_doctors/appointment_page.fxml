@@ -56,6 +56,22 @@
                   <Font name="Bodoni MT" size="22.0" />
                </font>
             </Label>
+            <BorderPane layoutX="-26.0" layoutY="-85.0" prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <AnchorPane fx:id="slider" prefHeight="251.0" prefWidth="200.0" style="-fx-background-color: 02030A;" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox layoutY="36.0" prefHeight="226.0" prefWidth="189.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="57.0" prefWidth="190.0" style="-fx-background-color: C3E5AE;" text="Button" />
+                              <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="57.0" prefWidth="190.0" style="-fx-background-color: C3E5AE;" text="Button2" />
+                              <Label alignment="CENTER" layoutX="10.0" layoutY="67.0" prefHeight="57.0" prefWidth="190.0" style="-fx-background-color: C3E5AE;" text="Button3" />
+                              <Label alignment="CENTER" layoutX="10.0" layoutY="125.0" prefHeight="57.0" prefWidth="190.0" style="-fx-background-color: C3E5AE;" text="Button4" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
          </children>
       </Pane>
       <Pane layoutX="14.0" layoutY="14.0" prefHeight="40.0" prefWidth="40.0">
@@ -66,22 +82,9 @@
                   <Image url="@../images_folder/baseline_menu_black_48dp.png" />
                </image>
             </ImageView>
+            <Label fx:id="MenuBack" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="40.0" prefWidth="94.0" text="MENU" />
+            <Label fx:id="Menu" alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="94.0" text="MENU" />
          </children>
       </Pane>
-      <Label fx:id="Menu" layoutX="54.0" layoutY="25.0" text="MENU" />
-      <Label fx:id="MenuBack" layoutX="54.0" layoutY="25.0" text="MENU" />
-      <BorderPane layoutY="78.0" prefHeight="200.0" prefWidth="200.0">
-         <center>
-            <AnchorPane fx:id="slider" prefHeight="350.0" prefWidth="200.0" style="-fx-background-color: blue;" BorderPane.alignment="CENTER">
-               <children>
-                  <VBox layoutY="67.0" prefHeight="259.0" prefWidth="189.0">
-                     <children>
-                        <Label prefHeight="58.0" prefWidth="189.0" text="Just" />
-                     </children>
-                  </VBox>
-               </children>
-            </AnchorPane>
-         </center>
-      </BorderPane>
    </children>
 </AnchorPane>

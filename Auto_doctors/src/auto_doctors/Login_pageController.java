@@ -8,11 +8,13 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ChoiceBox;
 import javafx.stage.Stage;
 
 /**
@@ -25,9 +27,16 @@ public class Login_pageController implements Initializable {
     /**
      * Initializes the controller class.
      */
+    
+    @FXML
+    private ChoiceBox<String> myChoiceBox;
+    private final String[] option = {"User", "Workshop"};
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        myChoiceBox.setValue("User");
+        myChoiceBox.getItems().addAll(option);
     }    
     
     private Stage stage;
@@ -36,6 +45,8 @@ public class Login_pageController implements Initializable {
     
     
      public void HandleBackBtnLogin1 (ActionEvent event) throws IOException {
+         
+         
         root = FXMLLoader.load(getClass().getResource("/auto_doctors/Home_page.fxml"));
 
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -48,6 +59,16 @@ public class Login_pageController implements Initializable {
      
      public void HandleLoginBtn (ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("/auto_doctors/appointment_page.fxml"));
+
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+
+        stage.setScene(scene);
+        stage.show();
+    }
+     
+     public void signUpBtnHandler (ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("/auto_doctors/signup_page.fxml"));
 
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
