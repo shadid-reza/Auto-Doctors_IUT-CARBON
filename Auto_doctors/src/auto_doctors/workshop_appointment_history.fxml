@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: C7DAF5;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="auto_doctors.Workshop_appointment_historyController">
+   <children>
+      <Pane layoutX="162.0" layoutY="24.0" prefHeight="71.0" prefWidth="295.0">
+         <children>
+            <Label layoutX="12.0" layoutY="17.0" text="Appointment History">
+               <font>
+                  <Font name="Bodoni MT" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="525.0" layoutY="40.0" prefHeight="40.0" prefWidth="40.0">
+         <children>
+            <Button fx:id="back_button" mnemonicParsing="false" onAction="#HandleBackBtnWorkshop" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images_folder/back_button.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <TableView layoutX="8.0" layoutY="95.0" prefHeight="293.0" prefWidth="584.0">
+        <columns>
+          <TableColumn prefWidth="105.33331298828125" text="Service Name" />
+            <TableColumn prefWidth="79.33331298828125" text="Service ID" />
+          <TableColumn prefWidth="79.33331298828125" text="User ID" />
+            <TableColumn prefWidth="71.3333740234375" text="Price" />
+            <TableColumn prefWidth="74.00006103515625" text="Time/Date" />
+            <TableColumn text="Status" />
+            <TableColumn prefWidth="92.0" text="Car Company" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

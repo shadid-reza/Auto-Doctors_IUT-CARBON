@@ -37,7 +37,7 @@
                   <Font name="Bodoni MT" size="22.0" />
                </font>
             </Label>
-            <TextField layoutX="155.0" layoutY="19.0" prefHeight="38.0" prefWidth="249.0" promptText="Username" />
+            <TextField fx:id="use_name" layoutX="155.0" layoutY="19.0" prefHeight="38.0" prefWidth="249.0" promptText="Username" />
             <Label layoutX="45.0" layoutY="70.0" text="Password">
                <font>
                   <Font name="Bodoni MT" size="22.0" />

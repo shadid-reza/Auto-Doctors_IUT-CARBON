@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
@@ -18,11 +24,104 @@
             </Label>
          </children>
       </Pane>
-      <TableView layoutX="10.0" layoutY="90.0" prefHeight="200.0" prefWidth="573.0">
+      <TableView layoutX="10.0" layoutY="90.0" prefHeight="200.0" prefWidth="391.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
+          <TableColumn prefWidth="74.66665649414062" text="ID" />
+          <TableColumn prefWidth="128.66668701171875" text="Name" />
+            <TableColumn minWidth="0.0" prefWidth="79.33331298828125" text="Price" />
+            <TableColumn minWidth="0.0" prefWidth="117.33331298828125" text="Avaibility" />
         </columns>
       </TableView>
+      <Button fx:id="add_services" layoutX="14.0" layoutY="308.0" mnemonicParsing="false" onAction="#add_btn" text="Add Services" />
+      <Button fx:id="remove_services" layoutX="206.0" layoutY="308.0" mnemonicParsing="false" onAction="#remove_btn" text="Remove Services" />
+      <Button fx:id="edit_services" layoutX="111.0" layoutY="308.0" mnemonicParsing="false" onAction="#edit_btn" text="Edit Services" />
+      <Button layoutX="344.0" layoutY="308.0" mnemonicParsing="false" text="Refresh" />
+      <BorderPane layoutX="400.0" layoutY="90.0" prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <AnchorPane fx:id="slider" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane fx:id="add_service_pane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: D9D7F1; -fx-border-color: black;" visible="false">
+                     <children>
+                        <Label layoutX="49.0" layoutY="14.0" text="Add Services" underline="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="5.0" layoutY="65.0" text="Name :" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox layoutX="55.0" layoutY="62.0" prefHeight="25.0" prefWidth="130.0" promptText="Select Service" visibleRowCount="15" />
+                        <Label layoutX="5.0" layoutY="115.0" text="Price :" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="53.0" layoutY="113.0" prefHeight="25.0" prefWidth="130.0" promptText="enter price" />
+                        <Button layoutX="130.0" layoutY="151.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="56.0" text="Add" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="edit_service_pane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: D9D7F1; -fx-border-color: black;" visible="false">
+                     <children>
+                        <Label layoutX="49.0" layoutY="14.0" text="Edit Service" underline="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="5.0" layoutY="65.0" text="Name :" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox layoutX="55.0" layoutY="62.0" prefHeight="25.0" prefWidth="130.0" promptText="Select Service" visibleRowCount="15" />
+                        <Label layoutX="8.0" layoutY="101.0" text="Price :" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="55.0" layoutY="98.0" prefHeight="25.0" prefWidth="130.0" promptText="enter price" />
+                        <Button layoutX="130.0" layoutY="167.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="56.0" text="Edit" />
+                        <Label layoutX="8.0" layoutY="137.0" prefHeight="20.0" prefWidth="71.0" text="Avaibility :" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox layoutX="76.0" layoutY="135.0" prefHeight="25.0" prefWidth="112.0" promptText="Select Avaibility" visibleRowCount="3" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="remove_service_pane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: D9D7F1; -fx-border-color: black;" visible="false">
+                     <children>
+                        <Label layoutX="49.0" layoutY="14.0" text="Remove Service" underline="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="5.0" layoutY="90.0" text="Name :" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox layoutX="56.0" layoutY="88.0" prefHeight="25.0" prefWidth="130.0" promptText="Select Service" visibleRowCount="15" />
+                        <Button layoutX="112.0" layoutY="134.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Remove" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+      <Pane layoutX="527.0" layoutY="20.0" prefHeight="40.0" prefWidth="40.0">
+         <children>
+            <Button fx:id="back_button" mnemonicParsing="false" onAction="#HandleBackBtnWorkshop" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images_folder/back_button.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>

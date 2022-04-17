@@ -12,7 +12,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: C7DAF5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="auto_doctors.Workshop_profileController">
    <children>
-      <AnchorPane layoutX="16.0" layoutY="54.0" prefHeight="149.0" prefWidth="181.0" style="-fx-background-color: C7DAF5;">
+      <AnchorPane layoutX="16.0" layoutY="54.0" prefHeight="149.0" prefWidth="181.0" style="-fx-background-color: C7DAF5; -fx-background-radius: 20;">
          <children>
             <ImageView fitHeight="108.0" fitWidth="108.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -36,42 +36,42 @@
       </TableView>
       <AnchorPane layoutX="221.0" layoutY="56.0" prefHeight="146.0" prefWidth="324.0">
          <children>
-            <AnchorPane layoutX="111.0" layoutY="14.0" prefHeight="105.0" prefWidth="102.0" style="-fx-background-color: #634CC0;">
+            <AnchorPane layoutX="111.0" layoutY="14.0" prefHeight="105.0" prefWidth="102.0" style="-fx-background-color: #634CC0; -fx-background-radius: 10;">
                <children>
                   <Label contentDisplay="TOP" layoutX="7.0" prefHeight="57.0" prefWidth="87.0" text="Parts Available" textFill="WHITE" underline="true" wrapText="true">
                      <font>
                         <Font name="Arial Italic" size="14.0" />
                      </font>
                   </Label>
-                  <Button layoutX="14.0" layoutY="61.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="81.0" style="-fx-background-color: B2DDC3;" text=" View Page" wrapText="true">
+                  <Button layoutX="10.0" layoutY="61.0" mnemonicParsing="false" onAction="#MyPartsPageBtn" prefHeight="29.0" prefWidth="81.0" style="-fx-background-color: B2DDC3;" text=" View Page" wrapText="true">
                      <font>
                         <Font name="Arial" size="11.0" />
                      </font>
                   </Button>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="222.0" layoutY="13.0" prefHeight="105.0" prefWidth="102.0" style="-fx-background-color: #634CC0;">
+            <AnchorPane layoutX="222.0" layoutY="13.0" prefHeight="105.0" prefWidth="102.0" style="-fx-background-color: #634CC0; -fx-background-radius: 10;">
                <children>
                   <Label contentDisplay="TOP" layoutX="7.0" prefHeight="57.0" prefWidth="87.0" text="Appointments History" textFill="WHITE" underline="true" wrapText="true">
                      <font>
                         <Font name="Arial Italic" size="14.0" />
                      </font>
                   </Label>
-                  <Button layoutX="14.0" layoutY="61.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="81.0" style="-fx-background-color: B2DDC3;" text=" View Page" wrapText="true">
+                  <Button layoutX="10.0" layoutY="61.0" mnemonicParsing="false" onAction="#AppointmentHistoryBtn" prefHeight="29.0" prefWidth="81.0" style="-fx-background-color: B2DDC3;" text=" View Page" wrapText="true">
                      <font>
                         <Font name="Arial" size="11.0" />
                      </font>
                   </Button>
                </children>
             </AnchorPane>
-            <AnchorPane layoutY="13.0" prefHeight="105.0" prefWidth="102.0" style="-fx-background-color: #634CC0;">
+            <AnchorPane layoutY="13.0" prefHeight="105.0" prefWidth="102.0" style="-fx-background-color: #634CC0; -fx-background-radius: 10;">
                <children>
                   <Label contentDisplay="TOP" layoutX="7.0" prefHeight="57.0" prefWidth="87.0" text="My Services" textFill="WHITE" underline="true" wrapText="true">
                      <font>
                         <Font name="Arial Italic" size="14.0" />
                      </font>
                   </Label>
-                  <Button layoutX="14.0" layoutY="61.0" mnemonicParsing="false" onAction="#MyServicesPageBtn" prefHeight="29.0" prefWidth="81.0" style="-fx-background-color: B2DDC3;" text=" View Page" wrapText="true">
+                  <Button layoutX="10.0" layoutY="61.0" mnemonicParsing="false" onAction="#MyServicesPageBtn" prefHeight="29.0" prefWidth="81.0" style="-fx-background-color: B2DDC3;" text=" View Page" wrapText="true">
                      <font>
                         <Font name="Arial" size="11.0" />
                      </font>

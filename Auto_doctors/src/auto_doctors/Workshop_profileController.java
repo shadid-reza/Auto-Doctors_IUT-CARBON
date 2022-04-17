@@ -46,4 +46,27 @@ public class Workshop_profileController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
+    public void MyPartsPageBtn (ActionEvent event) throws IOException {
+         
+         
+        root = FXMLLoader.load(getClass().getResource("/auto_doctors/my_parts_table.fxml"));
+
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    public void AppointmentHistoryBtn (ActionEvent event) throws IOException {
+         
+         
+        root = FXMLLoader.load(getClass().getResource("/auto_doctors/workshop_appointment_history.fxml"));
+
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+
+        stage.setScene(scene);
+        stage.show();
+    }
 }

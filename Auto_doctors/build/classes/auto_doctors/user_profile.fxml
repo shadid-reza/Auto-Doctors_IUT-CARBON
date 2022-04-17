@@ -81,7 +81,21 @@
       </AnchorPane>
       <AnchorPane layoutX="264.0" layoutY="230.0" prefHeight="146.0" prefWidth="324.0">
          <children>
-            <AnchorPane layoutX="111.0" layoutY="14.0" prefHeight="105.0" prefWidth="102.0" style="-fx-background-color: B2DDC3;">
+            <AnchorPane layoutY="13.0" prefHeight="105.0" prefWidth="102.0" style="-fx-background-color: B2DDC3; -fx-background-radius: 10;">
+               <children>
+                  <Label contentDisplay="TOP" layoutX="7.0" prefHeight="57.0" prefWidth="87.0" text="Make Appointment" underline="true" wrapText="true">
+                     <font>
+                        <Font name="Arial Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="14.0" layoutY="61.0" mnemonicParsing="false" onAction="#MakeAppointmentBtn" prefHeight="29.0" prefWidth="81.0" style="-fx-background-color: #634CC0;" text=" View Page" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Arial" size="11.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="111.0" layoutY="14.0" prefHeight="105.0" prefWidth="102.0" style="-fx-background-color: B2DDC3; -fx-background-radius: 10;">
                <children>
                   <Label contentDisplay="TOP" layoutX="7.0" prefHeight="57.0" prefWidth="87.0" text="Search Workshops" underline="true" wrapText="true">
                      <font>
@@ -95,7 +109,7 @@
                   </Button>
                </children>
             </AnchorPane>
-            <AnchorPane layoutX="222.0" layoutY="13.0" prefHeight="105.0" prefWidth="102.0" style="-fx-background-color: B2DDC3;">
+            <AnchorPane layoutX="222.0" layoutY="13.0" prefHeight="105.0" prefWidth="102.0" style="-fx-background-color: B2DDC3; -fx-background-radius: 10;">
                <children>
                   <Label contentDisplay="TOP" layoutX="7.0" prefHeight="57.0" prefWidth="87.0" text="Search parts" underline="true" wrapText="true">
                      <font>
@@ -103,20 +117,6 @@
                      </font>
                   </Label>
                   <Button layoutX="14.0" layoutY="61.0" mnemonicParsing="false" onAction="#SearchPartsPageBtn" prefHeight="29.0" prefWidth="81.0" style="-fx-background-color: #634CC0;" text=" View Page" textFill="WHITE" wrapText="true">
-                     <font>
-                        <Font name="Arial" size="11.0" />
-                     </font>
-                  </Button>
-               </children>
-            </AnchorPane>
-            <AnchorPane layoutY="13.0" prefHeight="105.0" prefWidth="102.0" style="-fx-background-color: B2DDC3;">
-               <children>
-                  <Label contentDisplay="TOP" layoutX="7.0" prefHeight="57.0" prefWidth="87.0" text="Make Appointment" underline="true" wrapText="true">
-                     <font>
-                        <Font name="Arial Italic" size="14.0" />
-                     </font>
-                  </Label>
-                  <Button layoutX="14.0" layoutY="61.0" mnemonicParsing="false" onAction="#MakeAppointmentBtn" prefHeight="29.0" prefWidth="81.0" style="-fx-background-color: #634CC0;" text=" View Page" textFill="WHITE" wrapText="true">
                      <font>
                         <Font name="Arial" size="11.0" />
                      </font>

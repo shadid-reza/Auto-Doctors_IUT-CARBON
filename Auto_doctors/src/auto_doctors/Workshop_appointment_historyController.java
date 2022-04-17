@@ -20,39 +20,24 @@ import javafx.stage.Stage;
  *
  * @author hmsha
  */
-public class SignUp_workshopController implements Initializable {
+public class Workshop_appointment_historyController implements Initializable {
 
     /**
      * Initializes the controller class.
-     * @param url
-     * @param rb
      */
+    
+     private Stage stage;
+    private Scene scene;
+    private Parent root;
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-    
-    private Stage stage;
-    private Scene scene;
-    private Parent root;
-    
-    
-     public void HandleBackBtnSignUp2 (ActionEvent event) throws IOException {
+     public void HandleBackBtnWorkshop (ActionEvent event) throws IOException {
          
          
-        root = FXMLLoader.load(getClass().getResource("/auto_doctors/Home_page.fxml"));
-
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-
-        stage.setScene(scene);
-        stage.show();
-    }
-     
-      public void WorkShopSignupCont (ActionEvent event) throws IOException {
-         
-         
-        root = FXMLLoader.load(getClass().getResource("/auto_doctors/signup2_workshop.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/auto_doctors/workshop_profile.fxml"));
 
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);

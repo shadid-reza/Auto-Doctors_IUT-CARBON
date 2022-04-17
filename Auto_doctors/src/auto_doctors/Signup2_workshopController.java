@@ -8,11 +8,13 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 /**
@@ -20,39 +22,34 @@ import javafx.stage.Stage;
  *
  * @author hmsha
  */
-public class SignUp_workshopController implements Initializable {
+public class Signup2_workshopController implements Initializable {
 
     /**
      * Initializes the controller class.
      * @param url
      * @param rb
      */
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
     
-    private Stage stage;
+//    @FXML
+//    private Pane add_parts_pane;
+//    @FXML
+//    private Pane add_service_pane;
+//    @FXML
+//    private Pane back_button_signup11;
+    
+      private Stage stage;
     private Scene scene;
     private Parent root;
     
     
-     public void HandleBackBtnSignUp2 (ActionEvent event) throws IOException {
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+        // TODO
+    }    
+    public void HandleBackBtnSignUp2 (ActionEvent event) throws IOException {
          
          
-        root = FXMLLoader.load(getClass().getResource("/auto_doctors/Home_page.fxml"));
-
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-
-        stage.setScene(scene);
-        stage.show();
-    }
-     
-      public void WorkShopSignupCont (ActionEvent event) throws IOException {
-         
-         
-        root = FXMLLoader.load(getClass().getResource("/auto_doctors/signup2_workshop.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/auto_doctors/signUp_workshop.fxml"));
 
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);

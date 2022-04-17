@@ -7,7 +7,6 @@ package auto_doctors;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -16,53 +15,40 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import javafx.util.Duration;
 
 /**
  * FXML Controller class
  *
  * @author hmsha
  */
-public class My_services_tableController implements Initializable {
+public class My_parts_tableController implements Initializable {
 
     /**
      * Initializes the controller class.
      */
     
     
-    
-    @FXML   
-    private Button add_services;
-    @FXML   
-    private Button edit_services;
-    @FXML   
-    private Button remove_services;
+    @FXML
+    private Pane edit_parts_pane;
 
     @FXML
-    private Pane add_service_pane;
-    
-     @FXML
-    private Pane edit_service_pane;
-
+    private Pane remove_parts_pane;
     @FXML
-    private Pane remove_service_pane;
+    private Pane add_parts_pane;
 
     
     private Stage stage;
     private Scene scene;
     private Parent root;
-  
+    
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        
-        
-        
     }    
+    
     
      public void HandleBackBtnWorkshop (ActionEvent event) throws IOException {
          
@@ -76,26 +62,25 @@ public class My_services_tableController implements Initializable {
         stage.show();
     }
      
-      public void add_btn (ActionEvent event) throws IOException {
+     public void addparts_btn (ActionEvent event) throws IOException {
                 
-            add_service_pane.setVisible(true);
-            edit_service_pane.setVisible(false);
-            remove_service_pane.setVisible(false);
+            add_parts_pane.setVisible(true);
+            edit_parts_pane.setVisible(false);
+            remove_parts_pane.setVisible(false);
                
     }
-       public void edit_btn (ActionEvent event) throws IOException {
+       public void editparts_btn (ActionEvent event) throws IOException {
                 
-            add_service_pane.setVisible(false);
-            edit_service_pane.setVisible(true);
-            remove_service_pane.setVisible(false);
+            add_parts_pane.setVisible(false);
+            edit_parts_pane.setVisible(true);
+            remove_parts_pane.setVisible(false);
                
     }
-        public void remove_btn (ActionEvent event) throws IOException {
+        public void removeparts_btn (ActionEvent event) throws IOException {
                 
-            add_service_pane.setVisible(false);
-            edit_service_pane.setVisible(false);
-            remove_service_pane.setVisible(true);
+            add_parts_pane.setVisible(false);
+            edit_parts_pane.setVisible(false);
+            remove_parts_pane.setVisible(true);
                
     }
-    
 }

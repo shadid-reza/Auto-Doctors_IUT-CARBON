@@ -4,7 +4,10 @@
  */
 package auto_doctors;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.InetAddress;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.animation.TranslateTransition;
@@ -15,8 +18,11 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -32,8 +38,14 @@ public class Search_partsController implements Initializable {
      */
     
     @FXML
-    private AnchorPane slider;
+    private BorderPane slider;
      
+    @FXML
+     private TextField search_box;
+     
+     @FXML
+     private Button enter_btn;
+    
      @FXML
     private Label Menu;
 
@@ -126,4 +138,17 @@ public class Search_partsController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
+      
+      public void PartsNameBtn (ActionEvent event) throws IOException {
+         
+        search_box.setVisible(true);
+        enter_btn.setVisible(true);
+    }  
+    
+    public void EnterBtn (ActionEvent event) throws IOException {
+        
+        search_box.setVisible(false);
+        enter_btn.setVisible(false);
+        
+    }  
 }

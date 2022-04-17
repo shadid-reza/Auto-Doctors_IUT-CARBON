@@ -13,11 +13,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: C7DAF5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="auto_doctors.My_services_tableController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: C7DAF5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="auto_doctors.My_parts_tableController">
    <children>
       <Pane layoutX="152.0" layoutY="14.0" prefHeight="71.0" prefWidth="295.0">
          <children>
-            <Label layoutX="69.0" layoutY="17.0" text="My Services ">
+            <Label layoutX="69.0" layoutY="17.0" text="My Parts">
                <font>
                   <Font name="Bodoni MT" size="30.0" />
                </font>
@@ -25,24 +25,24 @@
          </children>
       </Pane>
       <TableView layoutX="10.0" layoutY="90.0" prefHeight="200.0" prefWidth="391.0">
-        <columns>
-          <TableColumn prefWidth="74.66665649414062" text="ID" />
-          <TableColumn prefWidth="128.66668701171875" text="Name" />
+         <columns>
+            <TableColumn prefWidth="74.66665649414062" text="ID" />
+            <TableColumn prefWidth="128.66668701171875" text="Name" />
             <TableColumn minWidth="0.0" prefWidth="79.33331298828125" text="Price" />
             <TableColumn minWidth="0.0" prefWidth="117.33331298828125" text="Avaibility" />
-        </columns>
+         </columns>
       </TableView>
-      <Button fx:id="add_services" layoutX="14.0" layoutY="308.0" mnemonicParsing="false" onAction="#add_btn" text="Add Services" />
-      <Button fx:id="remove_services" layoutX="206.0" layoutY="308.0" mnemonicParsing="false" onAction="#remove_btn" text="Remove Services" />
-      <Button fx:id="edit_services" layoutX="111.0" layoutY="308.0" mnemonicParsing="false" onAction="#edit_btn" text="Edit Services" />
+      <Button layoutX="14.0" layoutY="308.0" mnemonicParsing="false" onAction="#addparts_btn" text="Add Parts" />
+      <Button layoutX="206.0" layoutY="308.0" mnemonicParsing="false" onAction="#removeparts_btn" text="Remove Parts" />
+      <Button layoutX="111.0" layoutY="308.0" mnemonicParsing="false" onAction="#editparts_btn" text="Edit Parts" />
       <Button layoutX="344.0" layoutY="308.0" mnemonicParsing="false" text="Refresh" />
       <BorderPane layoutX="400.0" layoutY="90.0" prefHeight="200.0" prefWidth="200.0">
          <top>
             <AnchorPane fx:id="slider" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <Pane fx:id="add_service_pane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: D9D7F1; -fx-border-color: black;" visible="false">
+                  <Pane fx:id="add_parts_pane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: D9D7F1; -fx-border-color: black;" visible="false">
                      <children>
-                        <Label layoutX="49.0" layoutY="14.0" text="Add Services" underline="true">
+                        <Label layoutX="49.0" layoutY="14.0" text="Add Parts" underline="true">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -52,7 +52,7 @@
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <ComboBox layoutX="55.0" layoutY="62.0" prefHeight="25.0" prefWidth="130.0" promptText="Select Service" visibleRowCount="15" />
+                        <ComboBox layoutX="55.0" layoutY="62.0" prefHeight="25.0" prefWidth="130.0" promptText="Select Parts" visibleRowCount="15" />
                         <Label layoutX="5.0" layoutY="115.0" text="Price :" underline="true">
                            <font>
                               <Font size="14.0" />
@@ -62,9 +62,9 @@
                         <Button layoutX="130.0" layoutY="151.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="56.0" text="Add" />
                      </children>
                   </Pane>
-                  <Pane fx:id="edit_service_pane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: D9D7F1; -fx-border-color: black;" visible="false">
+                  <Pane fx:id="edit_parts_pane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: D9D7F1; -fx-border-color: black;" visible="false">
                      <children>
-                        <Label layoutX="49.0" layoutY="14.0" text="Edit Service" underline="true">
+                        <Label layoutX="49.0" layoutY="14.0" text="Edit Parts" underline="true">
                            <font>
                               <Font size="18.0" />
                            </font>
@@ -74,7 +74,7 @@
                               <Font size="14.0" />
                            </font>
                         </Label>
-                        <ComboBox layoutX="55.0" layoutY="62.0" prefHeight="25.0" prefWidth="130.0" promptText="Select Service" visibleRowCount="15" />
+                        <ComboBox layoutX="55.0" layoutY="62.0" prefHeight="25.0" prefWidth="130.0" promptText="Select Parts" visibleRowCount="15" />
                         <Label layoutX="8.0" layoutY="101.0" text="Price :" underline="true">
                            <font>
                               <Font size="14.0" />
@@ -90,9 +90,9 @@
                         <ComboBox layoutX="76.0" layoutY="135.0" prefHeight="25.0" prefWidth="112.0" promptText="Select Avaibility" visibleRowCount="3" />
                      </children>
                   </Pane>
-                  <Pane fx:id="remove_service_pane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: D9D7F1; -fx-border-color: black;" visible="false">
+                  <Pane fx:id="remove_parts_pane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: D9D7F1; -fx-border-color: black;" visible="false">
                      <children>
-                        <Label layoutX="49.0" layoutY="14.0" text="Remove Service" underline="true">
+                        <Label layoutX="49.0" layoutY="14.0" text="Remove Parts" underline="true">
                            <font>
                               <Font size="18.0" />
                            </font>

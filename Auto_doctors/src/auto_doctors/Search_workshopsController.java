@@ -15,8 +15,11 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -32,10 +35,16 @@ public class Search_workshopsController implements Initializable {
      */
     
      @FXML
-    private AnchorPane slider;
+    private BorderPane slider;
      
      @FXML
     private Label Menu;
+     
+     @FXML
+     private TextField search_box;
+     
+     @FXML
+     private Button enter_btn;
 
     @FXML
     private Label MenuBack;
@@ -121,4 +130,18 @@ public class Search_workshopsController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
+      
+    public void NameBtn (ActionEvent event) throws IOException {
+         
+        search_box.setVisible(true);
+        enter_btn.setVisible(true);
+    }  
+    
+    public void EnterBtn (ActionEvent event) throws IOException {
+        
+        search_box.setVisible(false);
+        enter_btn.setVisible(false);
+        
+    }  
+      
 }
