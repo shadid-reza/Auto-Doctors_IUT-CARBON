@@ -4,6 +4,9 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.MotionBlur?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -56,24 +59,79 @@
                   <Font name="Bodoni MT" size="22.0" />
                </font>
             </Label>
-            <BorderPane layoutX="-26.0" layoutY="-85.0" prefHeight="200.0" prefWidth="200.0">
-               <center>
-                  <AnchorPane fx:id="slider" prefHeight="251.0" prefWidth="200.0" style="-fx-background-color: 02030A;" BorderPane.alignment="CENTER">
-                     <children>
-                        <VBox layoutY="36.0" prefHeight="226.0" prefWidth="189.0">
-                           <children>
-                              <Label alignment="CENTER" prefHeight="57.0" prefWidth="190.0" style="-fx-background-color: C3E5AE;" text="Button" />
-                              <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="57.0" prefWidth="190.0" style="-fx-background-color: C3E5AE;" text="Button2" />
-                              <Label alignment="CENTER" layoutX="10.0" layoutY="67.0" prefHeight="57.0" prefWidth="190.0" style="-fx-background-color: C3E5AE;" text="Button3" />
-                              <Label alignment="CENTER" layoutX="10.0" layoutY="125.0" prefHeight="57.0" prefWidth="190.0" style="-fx-background-color: C3E5AE;" text="Button4" />
-                           </children>
-                        </VBox>
-                     </children>
-                  </AnchorPane>
-               </center>
-            </BorderPane>
          </children>
       </Pane>
+      <BorderPane layoutY="65.0" prefHeight="200.0" prefWidth="200.0">
+         <top>
+            <AnchorPane fx:id="slider" prefHeight="230.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane opacity="0.6" prefHeight="230.0" prefWidth="200.0" style="-fx-background-color: #97DBAE;">
+                     <effect>
+                        <Lighting>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                           <bumpInput>
+                              <MotionBlur />
+                           </bumpInput>
+                        </Lighting>
+                     </effect>
+                  </Pane>
+                  <VBox layoutX="17.0" layoutY="21.0" prefHeight="180.0" prefWidth="165.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#UserProfilePageBtn" prefHeight="60.0" prefWidth="190.0" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <Label alignment="CENTER" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #1F4750;" text="Profile" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Bodoni MT" size="15.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="191.0" style="-fx-background-color: transparenat;">
+                           <graphic>
+                              <Label alignment="CENTER" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #1F4750;" text="Search Workshops" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Bodoni MT" size="15.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="67.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="191.0" style="-fx-background-color: transparenat;">
+                           <graphic>
+                              <Label alignment="CENTER" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #1F4750;" text="Search Parts" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Bodoni MT" size="15.0" />
+                                 </font>
+                              </Label>
+                           </graphic>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="125.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="191.0" style="-fx-background-color: transparenat;">
+                           <graphic>
+                              <Label prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #1F4750;" text="  Logout" textFill="WHITE" wrapText="true">
+                                 <font>
+                                    <Font name="Bodoni MT" size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <Pane accessibleRole="IMAGE_VIEW" prefHeight="30.0" prefWidth="30.0">
+                                       <children>
+                                          <ImageView fitHeight="30.0" fitWidth="47.0" layoutX="8.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../images_folder/baseline_logout_white_24dp.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </Pane>
+                                 </graphic>
+                              </Label>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
       <Pane layoutX="14.0" layoutY="14.0" prefHeight="40.0" prefWidth="40.0">
          <children>
             <Button layoutX="3.0" layoutY="3.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="34.0" style="-fx-background-color: transparent;" />

@@ -14,6 +14,8 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
@@ -39,6 +41,10 @@ public class Appoinment_pageController implements Initializable {
 
     @FXML
     private Label MenuBack;
+    
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -73,4 +79,19 @@ public class Appoinment_pageController implements Initializable {
        
     }    
     
+    
+     
+    
+    
+     public void UserProfilePageBtn (ActionEvent event) throws IOException {
+         
+         
+        root = FXMLLoader.load(getClass().getResource("/auto_doctors/user_profile.fxml"));
+
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+
+        stage.setScene(scene);
+        stage.show();
+    }
 }
