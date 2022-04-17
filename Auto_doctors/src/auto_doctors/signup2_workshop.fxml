@@ -25,9 +25,14 @@
             </ImageView>
             <Pane layoutX="179.0" prefHeight="95.0" prefWidth="241.0">
                <children>
-                  <Label layoutX="58.0" layoutY="14.0" text="Sign Up ">
+                  <Label layoutX="66.0" layoutY="14.0" text="Sign Up ">
                      <font>
                         <Font name="Bodoni MT" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="38.0" layoutY="52.0" text="Workshop Sign Up Page 2">
+                     <font>
+                        <Font name="Arial" size="14.0" />
                      </font>
                   </Label>
                </children>
@@ -103,19 +108,6 @@
                      <font>
                         <Font name="Arial Bold" size="14.0" />
                      </font>
-                  </Button>
-               </children>
-            </Pane>
-            <Pane layoutX="532.0" layoutY="10.0" prefHeight="38.0" prefWidth="41.0">
-               <children>
-                  <Button layoutY="5.0" mnemonicParsing="false" onAction="#HandleBackBtnSignUp2" prefHeight="30.0" prefWidth="43.0" style="-fx-background-color: transparent;">
-                     <graphic>
-                        <ImageView fitHeight="38.0" fitWidth="37.0" onDragDetected="#HandleBackBtnSignUp2" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images_folder/back_button.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
                   </Button>
                </children>
             </Pane>

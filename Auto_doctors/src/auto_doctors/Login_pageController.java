@@ -28,29 +28,26 @@ public class Login_pageController implements Initializable {
     /**
      * Initializes the controller class.
      */
-    
     @FXML
     private TextField user_name;
-    
+
     @FXML
     private ChoiceBox<String> myChoiceBox;
     private final String[] option = {"User", "Workshop"};
-    
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         myChoiceBox.setValue("User");
         myChoiceBox.getItems().addAll(option);
-    }    
-    
+    }
+
     private Stage stage;
     private Scene scene;
     private Parent root;
-    
-    
-     public void HandleBackBtnLogin1 (ActionEvent event) throws IOException {
-         
-         
+
+    public void HandleBackBtnLogin1(ActionEvent event) throws IOException {
+
         root = FXMLLoader.load(getClass().getResource("/auto_doctors/Home_page.fxml"));
 
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -59,34 +56,29 @@ public class Login_pageController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
-     
-     
-     public void HandleLoginBtn (ActionEvent event) throws IOException {
-         
-        if( "User".equals(myChoiceBox.getValue()))
-        {
-        root = FXMLLoader.load(getClass().getResource("/auto_doctors/user_profile.fxml"));
 
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
+    public void HandleLoginBtn(ActionEvent event) throws IOException {
 
-        stage.setScene(scene);
-        stage.show();
-        }
-        else if( "Workshop".equals(myChoiceBox.getValue()))
-        {
+        if ("User".equals(myChoiceBox.getValue())) {
+            root = FXMLLoader.load(getClass().getResource("/auto_doctors/user_profile.fxml"));
+
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+
+            stage.setScene(scene);
+            stage.show();
+        } else if ("Workshop".equals(myChoiceBox.getValue())) {
             root = FXMLLoader.load(getClass().getResource("/auto_doctors/workshop_profile.fxml"));
 
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
 
-        stage.setScene(scene);
-        stage.show();
+            stage.setScene(scene);
+            stage.show();
         }
-        }
-    
-     
-     public void signUpBtnHandler (ActionEvent event) throws IOException {
+    }
+
+    public void signUpBtnHandler(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("/auto_doctors/signup_page.fxml"));
 
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -95,6 +87,5 @@ public class Login_pageController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
-     
-     
+
 }

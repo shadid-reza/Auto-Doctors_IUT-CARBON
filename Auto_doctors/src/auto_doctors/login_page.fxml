@@ -30,7 +30,7 @@
             </Label>
          </children>
       </Pane>
-      <Pane layoutX="26.0" layoutY="114.0" onDragDetected="#HandleBackBtnLogin1" prefHeight="283.0" prefWidth="547.0">
+      <Pane layoutX="26.0" layoutY="114.0" prefHeight="283.0" prefWidth="547.0">
          <children>
             <Label layoutX="43.0" layoutY="25.0" text="Username">
                <font>
