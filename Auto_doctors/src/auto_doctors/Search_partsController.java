@@ -7,8 +7,6 @@ package auto_doctors;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -27,13 +25,13 @@ import javafx.util.Duration;
  *
  * @author hmsha
  */
-public class Appoinment_pageController implements Initializable {
+public class Search_partsController implements Initializable {
 
     /**
      * Initializes the controller class.
      */
     
-     @FXML
+    @FXML
     private AnchorPane slider;
      
      @FXML
@@ -45,13 +43,15 @@ public class Appoinment_pageController implements Initializable {
     private Stage stage;
     private Scene scene;
     private Parent root;
+  
+    
+    
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         
-        
-        slider.setTranslateX(-200);
+         slider.setTranslateX(-200);
         Menu.setOnMouseClicked(event-> {
                 TranslateTransition slide = new TranslateTransition();
                 slide.setDuration(Duration.seconds(0.4));
@@ -75,15 +75,10 @@ public class Appoinment_pageController implements Initializable {
                 Menu.setVisible(true);
                 MenuBack.setVisible(false);
             }); 
-        });
-       
+        });    
     }    
     
-    
-     
-    
-    
-     public void UserProfilePageBtn (ActionEvent event) throws IOException {
+    public void UserProfilePageBtn (ActionEvent event) throws IOException {
          
          
         root = FXMLLoader.load(getClass().getResource("/auto_doctors/user_profile.fxml"));
@@ -94,8 +89,21 @@ public class Appoinment_pageController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
-     
-      public void SearchWorkshopsPageBtn (ActionEvent event) throws IOException {
+    
+    public void MakeAppointmentPageBtn (ActionEvent event) throws IOException {
+         
+         
+        root = FXMLLoader.load(getClass().getResource("/auto_doctors/appointment_page.fxml"));
+
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    
+     public void SearchWorkshopsPageBtn (ActionEvent event) throws IOException {
          
          
         root = FXMLLoader.load(getClass().getResource("/auto_doctors/search_workshops.fxml"));
@@ -106,20 +114,8 @@ public class Appoinment_pageController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
-      
-      public void SearchPartsPageBtn (ActionEvent event) throws IOException {
-         
-         
-        root = FXMLLoader.load(getClass().getResource("/auto_doctors/search_parts.fxml"));
-
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-
-        stage.setScene(scene);
-        stage.show();
-    }
-      
-       public void HandleBackBtnUsers (ActionEvent event) throws IOException {
+     
+      public void HandleBackBtnUsers (ActionEvent event) throws IOException {
          
          
         root = FXMLLoader.load(getClass().getResource("/auto_doctors/user_profile.fxml"));

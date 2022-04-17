@@ -58,6 +58,9 @@ public class Login_pageController implements Initializable {
      
      
      public void HandleLoginBtn (ActionEvent event) throws IOException {
+         
+        if( "User".equals(myChoiceBox.getValue()))
+        {
         root = FXMLLoader.load(getClass().getResource("/auto_doctors/user_profile.fxml"));
 
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -65,7 +68,19 @@ public class Login_pageController implements Initializable {
 
         stage.setScene(scene);
         stage.show();
-    }
+        }
+        else if( "Workshop".equals(myChoiceBox.getValue()))
+        {
+            root = FXMLLoader.load(getClass().getResource("/auto_doctors/workshop_profile.fxml"));
+
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+
+        stage.setScene(scene);
+        stage.show();
+        }
+        }
+    
      
      public void signUpBtnHandler (ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("/auto_doctors/signup_page.fxml"));

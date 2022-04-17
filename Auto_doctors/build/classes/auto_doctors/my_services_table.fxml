@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: C7DAF5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="auto_doctors.My_services_tableController">
+   <children>
+      <Pane layoutX="152.0" layoutY="14.0" prefHeight="71.0" prefWidth="295.0">
+         <children>
+            <Label layoutX="69.0" layoutY="17.0" text="My Services ">
+               <font>
+                  <Font name="Bodoni MT" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView layoutX="10.0" layoutY="90.0" prefHeight="200.0" prefWidth="573.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

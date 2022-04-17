@@ -88,7 +88,7 @@
                               </Label>
                            </graphic>
                         </Button>
-                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="191.0" style="-fx-background-color: transparenat;">
+                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#SearchWorkshopsPageBtn" prefHeight="57.0" prefWidth="191.0" style="-fx-background-color: transparenat;">
                            <graphic>
                               <Label alignment="CENTER" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #1F4750;" text="Search Workshops" textFill="WHITE" wrapText="true">
                                  <font>
@@ -97,7 +97,7 @@
                               </Label>
                            </graphic>
                         </Button>
-                        <Button layoutX="10.0" layoutY="67.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="191.0" style="-fx-background-color: transparenat;">
+                        <Button layoutX="10.0" layoutY="67.0" mnemonicParsing="false" onAction="#SearchPartsPageBtn" prefHeight="57.0" prefWidth="191.0" style="-fx-background-color: transparenat;">
                            <graphic>
                               <Label alignment="CENTER" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #1F4750;" text="Search Parts" textFill="WHITE" wrapText="true">
                                  <font>
@@ -142,6 +142,19 @@
             </ImageView>
             <Label fx:id="MenuBack" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="40.0" prefWidth="94.0" text="MENU" />
             <Label fx:id="Menu" alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="94.0" text="MENU" />
+         </children>
+      </Pane>
+      <Pane layoutX="520.0" layoutY="10.0" prefHeight="40.0" prefWidth="40.0">
+         <children>
+            <Button fx:id="back_button" mnemonicParsing="false" onAction="#HandleBackBtnUsers" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images_folder/back_button.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
          </children>
       </Pane>
    </children>

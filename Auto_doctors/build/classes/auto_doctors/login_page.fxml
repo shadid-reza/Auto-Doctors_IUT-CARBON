@@ -67,9 +67,9 @@
             <ChoiceBox fx:id="myChoiceBox" layoutX="155.0" layoutY="117.0" prefHeight="38.0" prefWidth="249.0" />
          </children>
       </Pane>
-      <Pane layoutX="532.0" layoutY="10.0" prefHeight="40.0" prefWidth="40.0">
+      <Pane layoutX="535.0" layoutY="10.0" prefHeight="40.0" prefWidth="40.0">
          <children>
-            <Button fx:id="back_button" layoutY="5.0" mnemonicParsing="false" onAction="#HandleBackBtnLogin1" prefHeight="35.0" prefWidth="35.0" style="-fx-background-color: transparent;">
+            <Button fx:id="back_button" mnemonicParsing="false" onAction="#HandleBackBtnLogin1" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: transparent;">
                <graphic>
                   <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                      <image>
