@@ -138,6 +138,13 @@ public class Search_workshopsController implements Initializable {
         
         
     }  
+    public void LocationBtn (ActionEvent event) throws IOException {
+         
+        search_box.setVisible(true);
+        enter_btn.setVisible(true);
+        
+        
+    }  
     
     public void EnterBtn (ActionEvent event) throws IOException {
         

@@ -3,13 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/D:/Java%20work/Project%20Carbon/Auto-Doctors_IUT-CARBON/Auto_doctors/src/auto_doctors/Search_partsController.java</file>
             <file>file:/D:/Java%20work/Project%20Carbon/Auto-Doctors_IUT-CARBON/Auto_doctors/src/auto_doctors/Home_pageController.java</file>
-            <file>file:/D:/Java%20work/Project%20Carbon/Auto-Doctors_IUT-CARBON/Auto_doctors/src/auto_doctors/Signup_pageController.java</file>
-            <file>file:/D:/Java%20work/Project%20Carbon/Auto-Doctors_IUT-CARBON/Auto_doctors/src/auto_doctors/My_parts_tableController.java</file>
-            <file>file:/D:/Java%20work/Project%20Carbon/Auto-Doctors_IUT-CARBON/Auto_doctors/src/auto_doctors/Signup2_workshopController.java</file>
-            <file>file:/D:/Java%20work/Project%20Carbon/Auto-Doctors_IUT-CARBON/Auto_doctors/src/auto_doctors/Login_pageController.java</file>
-            <file>file:/D:/Java%20work/Project%20Carbon/Auto-Doctors_IUT-CARBON/Auto_doctors/src/auto_doctors/User_profileController.java</file>
-            <file>file:/D:/Java%20work/Project%20Carbon/Auto-Doctors_IUT-CARBON/Auto_doctors/src/auto_doctors/SignUp_workshopController.java</file>
+            <file>file:/D:/Java%20work/Project%20Carbon/Auto-Doctors_IUT-CARBON/Auto_doctors/src/auto_doctors/Search_workshopsController.java</file>
+            <file>file:/D:/Java%20work/Project%20Carbon/Auto-Doctors_IUT-CARBON/Auto_doctors/src/auto_doctors/change_status.fxml</file>
+            <file>file:/D:/Java%20work/Project%20Carbon/Auto-Doctors_IUT-CARBON/Auto_doctors/src/auto_doctors/Workshop_profileController.java</file>
+            <file>file:/D:/Java%20work/Project%20Carbon/Auto-Doctors_IUT-CARBON/Auto_doctors/src/auto_doctors/Change_statusController.java</file>
         </group>
     </open-files>
 </project-private>

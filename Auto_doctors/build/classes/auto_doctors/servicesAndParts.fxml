@@ -5,7 +5,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Light.Distant?>
 <?import javafx.scene.effect.Lighting?>
 <?import javafx.scene.effect.MotionBlur?>
@@ -24,9 +23,9 @@
             <Image url="@../images_folder/back.png" />
          </image>
       </ImageView>
-      <Pane layoutX="192.0" layoutY="44.0" prefHeight="71.0" prefWidth="295.0">
+      <Pane layoutX="163.0" layoutY="28.0" prefHeight="71.0" prefWidth="295.0">
          <children>
-            <Label layoutX="68.0" layoutY="17.0" text="Search Parts">
+            <Label layoutX="13.0" layoutY="17.0" text="Search Parts/Services">
                <font>
                   <Font name="Bodoni MT" size="30.0" />
                </font>
@@ -40,27 +39,19 @@
                   <Font size="17.0" />
                </font>
             </Label>
-            <Button layoutX="104.0" layoutY="19.0" mnemonicParsing="false" onAction="#PartsNameBtn" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #224957;" text="Parts Name" textFill="WHITE" />
+            <Button layoutX="104.0" layoutY="19.0" mnemonicParsing="false" onAction="#PartsNameBtn" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #224957; -fx-background-radius: 10;" text="Parts Name" textFill="WHITE" />
             <TableView layoutX="24.0" layoutY="77.0" prefHeight="185.0" prefWidth="503.0">
                <columns>
-                  <TableColumn prefWidth="131.33334732055664" text="Workshop Name" />
-                  <TableColumn minWidth="8.6666259765625" prefWidth="109.99998474121094" text="Contact Number" />
-                  <TableColumn minWidth="8.6666259765625" prefWidth="94.66668701171875" text="Email" />
-                  <TableColumn minWidth="8.6666259765625" prefWidth="89.3333740234375" text="Location" />
-                  <TableColumn minWidth="-1.0" prefWidth="74.33334350585938" text="Parts" />
+                  <TableColumn fx:id="w_name" prefWidth="132.0000343322754" text="Workshop Name" />
+                  <TableColumn fx:id="w_contact" minWidth="8.6666259765625" prefWidth="125.33329772949219" text="Contact Number" />
+                  <TableColumn fx:id="w_email" minWidth="8.6666259765625" prefWidth="118.0" text="Email" />
+                  <TableColumn fx:id="w_location" minWidth="8.6666259765625" prefWidth="126.66671752929688" text="Location" />
                </columns>
             </TableView>
-            <TextField fx:id="search_box" layoutX="321.0" layoutY="17.0" prefHeight="25.0" prefWidth="193.0" promptText="Enter Parts Name" visible="false">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </TextField>
-            <ComboBox layoutX="216.0" layoutY="18.0" prefWidth="82.0" promptText="Parts" style="-fx-border-color: #224957;" />
-            <Button fx:id="enter_btn" layoutX="470.0" layoutY="48.0" mnemonicParsing="false" onAction="#EnterBtn" style="-fx-background-color: D9D7F1;" text="Enter" visible="false">
-               <font>
-                  <Font name="Arial" size="12.0" />
-               </font>
-            </Button>
+            <ComboBox fx:id="parts_combox" layoutX="336.0" layoutY="18.0" prefWidth="87.0" promptText="Parts" style="-fx-border-color: #224957;" visible="false" />
+            <Button layoutX="211.0" layoutY="19.0" mnemonicParsing="false" onAction="#ServicesNameBtn" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #224957; -fx-background-radius: 10;" text="Service Name" textFill="WHITE" />
+            <Button fx:id="search_btn" layoutX="433.0" layoutY="19.0" mnemonicParsing="false" onAction="#SearchBtn" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: #E8630A; -fx-background-radius: 20;" text="Search" textFill="WHITE" visible="false" />
+            <ComboBox fx:id="service_combox" layoutX="336.0" layoutY="18.0" prefWidth="87.0" promptText="Services" style="-fx-border-color: #224957;" visible="false" />
          </children>
       </Pane>
       <BorderPane fx:id="slider" layoutY="80.0" prefHeight="200.0" prefWidth="200.0">

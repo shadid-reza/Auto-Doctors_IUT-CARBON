@@ -18,6 +18,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -32,6 +33,9 @@ public class Appoinment_pageController implements Initializable {
     /**
      * Initializes the controller class.
      */
+    
+      @FXML
+    private TextField long_lat;
     
      @FXML
     private AnchorPane slider;
@@ -123,6 +127,25 @@ public class Appoinment_pageController implements Initializable {
          
          
         root = FXMLLoader.load(getClass().getResource("/auto_doctors/user_profile.fxml"));
+
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+
+        stage.setScene(scene);
+        stage.show();
+    }
+       
+       public void SearchClosestBtn (ActionEvent event) throws IOException {
+         
+         
+       String long_l =  long_lat.getText();
+       double[] lati_long =  Lat_Long_Extraction.split_LatLong(long_l);
+       
+       double latitude = lati_long[0];
+       double longitude = lati_long[1];
+       
+           
+        root = FXMLLoader.load(getClass().getResource("/auto_doctors/maps.fxml"));
 
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);

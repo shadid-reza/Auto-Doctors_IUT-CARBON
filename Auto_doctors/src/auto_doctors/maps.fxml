@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane id="AnchorPane" prefHeight="592.0" prefWidth="676.0" style="-fx-background-color: #066163;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="auto_doctors.webController">
+   <children>
+      <WebView fx:id="web1" layoutX="4.0" layoutY="151.0" prefHeight="435.0" prefWidth="668.0" />
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="83.0" layoutY="18.0" prefHeight="25.0" prefWidth="515.0" style="-fx-background-color: CDBE78; -fx-border-color: white;" text="INSTRUCTIONS" textAlignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="43.0" prefHeight="101.0" prefWidth="515.0" style="-fx-background-color: CDBE78; -fx-border-color: white;" text="1.Right-click the place or area on the map. This will open a pop-up window.                                                                                                                                                             2.You can find your latitude and longitude in decimal format at the top.                                                                                                                                                                     3.To copy the coordinates automatically, left click on the latitude and longitude.                                                                                                                                                      4.Close the Window" wrapText="true">
+         <font>
+            <Font name="Berlin Sans FB" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

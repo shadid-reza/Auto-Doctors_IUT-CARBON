@@ -19,7 +19,9 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
@@ -31,26 +33,48 @@ import javafx.util.Duration;
  *
  * @author hmsha
  */
-public class Search_partsController implements Initializable {
+public class ServiceAndPartsController implements Initializable {
 
     /**
      * Initializes the controller class.
      */
-    
-    @FXML
-    private BorderPane slider;
-     
-    @FXML
-     private TextField search_box;
-     
-     @FXML
-     private Button enter_btn;
     
      @FXML
     private Label Menu;
 
     @FXML
     private Label MenuBack;
+
+    @FXML
+    private Button back_button;
+
+    @FXML
+    private ComboBox<String> parts_combox;
+
+    @FXML
+    private Button search_btn;
+
+    @FXML
+    private ComboBox<String> service_combox;
+
+    @FXML
+    private BorderPane slider;
+
+    @FXML
+    private TableColumn<ServiceAndParts_user, String> w_contact;
+
+    @FXML
+    private TableColumn<ServiceAndParts_user, String> w_email;
+
+    @FXML
+    private TableColumn<ServiceAndParts_user, String> w_location;
+
+    @FXML
+    private TableColumn<ServiceAndParts_user, String> w_name;
+    
+    
+    
+
     
     private Stage stage;
     private Scene scene;
@@ -87,7 +111,10 @@ public class Search_partsController implements Initializable {
                 Menu.setVisible(true);
                 MenuBack.setVisible(false);
             }); 
-        });    
+        });   
+        
+        
+        
     }    
     
     public void UserProfilePageBtn (ActionEvent event) throws IOException {
@@ -140,15 +167,22 @@ public class Search_partsController implements Initializable {
     }
       
       public void PartsNameBtn (ActionEvent event) throws IOException {
-         
-        search_box.setVisible(true);
-        enter_btn.setVisible(true);
+        parts_combox.setVisible(true);
+        search_btn.setVisible(true);
+        service_combox.setVisible(false);
+    }  
+       public void ServicesNameBtn (ActionEvent event) throws IOException {
+           
+       parts_combox.setVisible(false);
+        search_btn.setVisible(true);
+        service_combox.setVisible(true);
     }  
     
-    public void EnterBtn (ActionEvent event) throws IOException {
-        
-        search_box.setVisible(false);
-        enter_btn.setVisible(false);
-        
+    public void SearchBtn (ActionEvent event) throws IOException {
+        parts_combox.setVisible(false);
+        search_btn.setVisible(false);
+        service_combox.setVisible(false);
     }  
+    
+    
 }
