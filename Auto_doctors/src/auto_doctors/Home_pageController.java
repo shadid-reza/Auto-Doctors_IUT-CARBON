@@ -39,7 +39,7 @@ public class Home_pageController implements Initializable {
         
         myChoiceBox.setValue("User");
         myChoiceBox.getItems().addAll(option);
-        
+         
     }    
     
     

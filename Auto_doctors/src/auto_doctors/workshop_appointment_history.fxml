@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: C7DAF5;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="auto_doctors.Workshop_appointment_historyController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: C7DAF5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="auto_doctors.Workshop_appointment_historyController">
    <children>
       <Pane layoutX="162.0" layoutY="24.0" prefHeight="71.0" prefWidth="295.0">
          <children>
@@ -35,15 +34,16 @@
             </Button>
          </children>
       </Pane>
-      <TableView layoutX="8.0" layoutY="95.0" prefHeight="293.0" prefWidth="584.0">
+      <TableView layoutX="8.0" layoutY="93.0" prefHeight="295.0" prefWidth="584.0">
         <columns>
-          <TableColumn prefWidth="105.33331298828125" text="Service Name" />
-            <TableColumn prefWidth="79.33331298828125" text="Service ID" />
-          <TableColumn prefWidth="79.33331298828125" text="User ID" />
-            <TableColumn prefWidth="71.3333740234375" text="Price" />
-            <TableColumn prefWidth="74.00006103515625" text="Time/Date" />
-            <TableColumn text="Status" />
-            <TableColumn prefWidth="92.0" text="Car Company" />
+          <TableColumn minWidth="49.33331298828125" prefWidth="51.33331298828125" text="App ID" />
+            <TableColumn prefWidth="74.66665649414062" text="User Name" />
+          <TableColumn prefWidth="71.33328247070312" text="Service" />
+            <TableColumn prefWidth="62.66668701171875" text="Parts" />
+            <TableColumn prefWidth="71.33331298828125" text="App Time" />
+            <TableColumn prefWidth="78.0" text="Comp Time" />
+            <TableColumn prefWidth="76.66668701171875" text="Status" />
+            <TableColumn prefWidth="97.33331298828125" text="Car Model" />
         </columns>
       </TableView>
    </children>
