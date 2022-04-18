@@ -28,14 +28,6 @@ public class User_profileController implements Initializable {
     @FXML
     private Label username_show;
     
-     @FXML
-    private AnchorPane slider;
-     
-     @FXML
-    private Label Menu;
-
-    @FXML
-    private Label MenuBack;
     
     private Stage stage;
     private Scene scene;
