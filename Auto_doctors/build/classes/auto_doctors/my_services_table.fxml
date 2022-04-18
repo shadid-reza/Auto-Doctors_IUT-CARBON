@@ -24,12 +24,12 @@
             </Label>
          </children>
       </Pane>
-      <TableView layoutX="10.0" layoutY="90.0" prefHeight="200.0" prefWidth="391.0">
+      <TableView fx:id="service_table" layoutX="10.0" layoutY="90.0" prefHeight="200.0" prefWidth="391.0">
         <columns>
-          <TableColumn prefWidth="74.66665649414062" text="ID" />
-          <TableColumn prefWidth="128.66668701171875" text="Name" />
-            <TableColumn minWidth="0.0" prefWidth="79.33331298828125" text="Price" />
-            <TableColumn minWidth="0.0" prefWidth="117.33331298828125" text="Avaibility" />
+          <TableColumn fx:id="m_id" prefWidth="74.66665649414062" text="ID" />
+          <TableColumn fx:id="m_name" prefWidth="128.66668701171875" text="Name" />
+            <TableColumn fx:id="m_price" minWidth="0.0" prefWidth="79.33331298828125" text="Price" />
+            <TableColumn fx:id="m_avail" minWidth="0.0" prefWidth="117.33331298828125" text="Avaibility" />
         </columns>
       </TableView>
       <Button fx:id="add_services" layoutX="14.0" layoutY="308.0" mnemonicParsing="false" onAction="#add_btn" text="Add Services" />

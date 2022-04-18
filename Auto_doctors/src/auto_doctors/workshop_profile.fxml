@@ -24,6 +24,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
+            <Label layoutX="118.0" layoutY="54.0" />
          </children>
       </AnchorPane>
       <TableView layoutX="16.0" layoutY="240.0" prefHeight="146.0" prefWidth="568.0">
@@ -106,5 +107,10 @@
             <Font size="17.0" />
          </font>
       </Label>
+      <Button layoutX="221.0" layoutY="188.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="102.0" style="-fx-background-color: #5B7DB1; -fx-background-radius: 10; -fx-border-color: black; -fx-border-radius: 10;" text="Change Status" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

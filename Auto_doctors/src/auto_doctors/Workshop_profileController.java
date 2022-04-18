@@ -69,4 +69,10 @@ public class Workshop_profileController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
+    
+    public void ChangeStatusBtn (ActionEvent event) throws IOException {
+         
+         
+     
+    }
 }
