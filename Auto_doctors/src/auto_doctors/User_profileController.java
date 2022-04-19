@@ -74,7 +74,7 @@ public class User_profileController implements Initializable {
       public void SearchPartsPageBtn (ActionEvent event) throws IOException {
          
          
-        root = FXMLLoader.load(getClass().getResource("/auto_doctors/search_parts.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/auto_doctors/servicesAndParts.fxml"));
 
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);

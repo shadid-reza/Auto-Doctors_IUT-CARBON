@@ -144,7 +144,7 @@ public class Appoinment_pageController implements Initializable {
        double latitude = lati_long[0];
        double longitude = lati_long[1];
        
-           
+          
         root = FXMLLoader.load(getClass().getResource("/auto_doctors/maps.fxml"));
 
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
