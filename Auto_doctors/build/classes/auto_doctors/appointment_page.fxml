@@ -59,7 +59,7 @@
                   <Font name="Bodoni MT" size="18.0" />
                </font>
             </Label>
-            <TextField layoutX="194.0" layoutY="152.0" prefHeight="25.0" prefWidth="200.0" promptText="example  :23.59342 ,25.23222" />
+            <TextField fx:id="long_lat" layoutX="194.0" layoutY="152.0" prefHeight="25.0" prefWidth="200.0" promptText="example  :23.59342 ,25.23222" />
             <Button layoutX="410.0" layoutY="151.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="137.0" style="-fx-background-color: FF7F3F; -fx-border-color: black;" text="Find Coordinate!!" underline="true">
                <font>
                   <Font name="Arial Bold" size="14.0" />
