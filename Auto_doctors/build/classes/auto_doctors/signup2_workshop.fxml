@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="auto_doctors.Signup2_workshopController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass">
+         <stylesheets>
+            <URL value="@login_page.css" />
+         </stylesheets>
+         <children>
+            <ImageView fitHeight="427.0" fitWidth="635.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images_folder/back.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="179.0" prefHeight="95.0" prefWidth="241.0">
+               <children>
+                  <Label layoutX="58.0" layoutY="14.0" text="Sign Up ">
+                     <font>
+                        <Font name="Bodoni MT" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="52.0" text="Workshop Sign Up page 2">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="27.0" layoutY="77.0" prefHeight="299.0" prefWidth="537.0">
+               <children>
+                  <Label layoutY="14.0" text="Latitude &amp; Longitude :" wrapText="true">
+                     <font>
+                        <Font name="Bodoni MT" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button alignment="CENTER" layoutX="155.0" layoutY="285.0" mnemonicParsing="false" onAction="#confirmSignUp" prefHeight="38.0" prefWidth="249.0" stylesheets="@signupworkshop.css" text="Sign Up" textFill="#fffdfd">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="tf_long_lat" layoutX="185.0" layoutY="10.0" prefHeight="30.0" prefWidth="201.0" promptText="Your Latitude and Longitude" />
+                  <Label layoutX="14.0" layoutY="56.0" prefHeight="30.0" prefWidth="121.0" text="Add Services : " underline="true">
+                     <font>
+                        <Font name="Bodoni MT" size="18.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="14.0" layoutY="86.0" prefHeight="190.0" prefWidth="210.0" style="-fx-background-color: D9D7F1; -fx-border-color: black; -fx-border-radius: 10; -fx-background-radius: 10;">
+                     <children>
+                        <Label layoutX="54.0" layoutY="14.0" text="Add Services" underline="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="5.0" layoutY="65.0" text="Name :" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="service_box" layoutX="55.0" layoutY="62.0" prefHeight="25.0" prefWidth="130.0" promptText="Select Service" visibleRowCount="15" />
+                        <Label layoutX="5.0" layoutY="115.0" text="Price :" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tf_service_price" layoutX="53.0" layoutY="113.0" prefHeight="25.0" prefWidth="130.0" promptText="enter price" />
+                        <Button layoutX="130.0" layoutY="151.0" mnemonicParsing="false" onAction="#addServicesBtn" prefHeight="25.0" prefWidth="56.0" text="Add" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="299.0" layoutY="86.0" prefHeight="190.0" prefWidth="210.0" style="-fx-background-color: D9D7F1; -fx-border-color: black; -fx-background-radius: 10; -fx-border-radius: 10;">
+                     <children>
+                        <Label layoutX="67.0" layoutY="14.0" text="Add Parts" underline="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="5.0" layoutY="65.0" text="Name :" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="parts_box" layoutX="55.0" layoutY="62.0" prefHeight="25.0" prefWidth="130.0" promptText="Select Parts" visibleRowCount="15" />
+                        <Label layoutX="5.0" layoutY="115.0" text="Price :" underline="true">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="tf_parts_price" layoutX="53.0" layoutY="113.0" prefHeight="25.0" prefWidth="130.0" promptText="enter price" />
+                        <Button layoutX="130.0" layoutY="151.0" mnemonicParsing="false" onAction="#addPartsBtn" prefHeight="25.0" prefWidth="56.0" text="Add" />
+                     </children>
+                  </Pane>
+                  <Label layoutX="300.0" layoutY="56.0" prefHeight="30.0" prefWidth="109.0" text="Add Parts :" underline="true">
+                     <font>
+                        <Font name="Bodoni MT" size="18.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="397.0" layoutY="6.0" mnemonicParsing="false" onAction="#findCoordinateBtn" prefHeight="37.0" prefWidth="163.0" style="-fx-background-color: FF7F3F; -fx-border-color: black; -fx-background-radius: 10; -fx-border-radius: 10;" stylesheets="@coordinate.css" text="Find Coordinate!!">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: C7DAF5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="auto_doctors.Workshop_appointment_historyController">
+   <children>
+      <Pane layoutX="162.0" layoutY="24.0" prefHeight="71.0" prefWidth="295.0">
+         <children>
+            <Label layoutX="12.0" layoutY="17.0" text="Appointments History">
+               <font>
+                  <Font name="Bodoni MT" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="525.0" layoutY="40.0" prefHeight="40.0" prefWidth="40.0">
+         <children>
+            <Button fx:id="back_button" mnemonicParsing="false" onAction="#HandleBackBtnWorkshop" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images_folder/back_button.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <TableView fx:id="app_table" layoutX="8.0" layoutY="93.0" prefHeight="295.0" prefWidth="584.0">
+        <columns>
+          <TableColumn fx:id="app_id" minWidth="49.33331298828125" prefWidth="51.33331298828125" text="App ID" />
+            <TableColumn fx:id="user_name" prefWidth="74.66665649414062" text="User Name" />
+          <TableColumn fx:id="service" prefWidth="71.33328247070312" text="Service" />
+            <TableColumn fx:id="parts" prefWidth="69.99993896484375" text="Parts" />
+            <TableColumn fx:id="apptime" prefWidth="74.00006103515625" text="App Time" />
+            <TableColumn fx:id="comptime" prefWidth="92.00006103515625" text="Comp Time" />
+            <TableColumn fx:id="status" prefWidth="77.33331298828125" text="Status" />
+            <TableColumn fx:id="model" prefWidth="76.66668701171875" text="Car Model" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
