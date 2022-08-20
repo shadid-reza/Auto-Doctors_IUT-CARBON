@@ -15,6 +15,7 @@ public class jdbc {
         }
         catch(SQLException e){
             System.out.println("Exception"+" " + e.getMessage());
+            System.out.println("\n\nPlease check database connection \n\n");
         }
         return connection;
     }
